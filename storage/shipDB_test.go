@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tormol/AIS/geo"
+	"github.com/snh/AIS/geo"
 )
 
 func randShipsPos(nShips, nMessages int) *map[uint32][]ShipPos {

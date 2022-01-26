@@ -13,9 +13,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/tormol/AIS/forwarder"
-	l "github.com/tormol/AIS/logger"
-	"github.com/tormol/AIS/nmeais"
+	"github.com/snh/AIS/forwarder"
+	l "github.com/snh/AIS/logger"
+	"github.com/snh/AIS/nmeais"
 )
 
 // Log holds the logger instance used throuhgout most of the program.

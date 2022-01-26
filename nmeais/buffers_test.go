@@ -3,7 +3,7 @@ package nmeais
 import (
 	"testing"
 
-	l "github.com/tormol/AIS/logger"
+	l "github.com/snh/AIS/logger"
 )
 
 var testPackets = []struct {

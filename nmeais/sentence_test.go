@@ -6,7 +6,7 @@ import (
 	"log"
 	"testing"
 
-	l "github.com/tormol/AIS/logger"
+	l "github.com/snh/AIS/logger"
 )
 
 func init() {

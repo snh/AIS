@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	l "github.com/tormol/AIS/logger"
-	"github.com/tormol/AIS/nmeais"
+	l "github.com/snh/AIS/logger"
+	"github.com/snh/AIS/nmeais"
 )
 
 const (

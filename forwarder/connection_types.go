@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	l "github.com/tormol/AIS/logger"
+	l "github.com/snh/AIS/logger"
 )
 
 // A WriteCloser for http forwarding

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tormol/AIS/forwarder"
+	"github.com/snh/AIS/forwarder"
 )
 
 // StaticRootDir should be relative to the current directory and without a trailing slash.

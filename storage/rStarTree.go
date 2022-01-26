@@ -19,7 +19,7 @@ import (
 	"log"
 	"sort"
 
-	"github.com/tormol/AIS/geo"
+	"github.com/snh/AIS/geo"
 )
 
 const RTree_M = 5 //max entries per node.

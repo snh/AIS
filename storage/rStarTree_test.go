@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/tormol/AIS/geo"
+	"github.com/snh/AIS/geo"
 )
 
 var mmsiCount uint32

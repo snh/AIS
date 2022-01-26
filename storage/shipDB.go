@@ -11,8 +11,8 @@ import (
 	"time"
 
 	ais "github.com/andmarios/aislib"
-	"github.com/tormol/AIS/geo"
-	//"github.com/tormol/AIS/logger"
+	"github.com/snh/AIS/geo"
+	//"github.com/snh/AIS/logger"
 )
 
 // Mmsi stands for Maritime Mobile Service Identity and is used to identify the

@@ -7,9 +7,9 @@ import (
 	"time"
 
 	ais "github.com/andmarios/aislib"
-	"github.com/tormol/AIS/geo"
-	"github.com/tormol/AIS/nmeais"
-	"github.com/tormol/AIS/storage"
+	"github.com/snh/AIS/geo"
+	"github.com/snh/AIS/nmeais"
+	"github.com/snh/AIS/storage"
 )
 
 //The Archive stores the information about the ships (and works as a temp. solution for the RTree concurrency)

@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	l "github.com/tormol/AIS/logger"
+	l "github.com/snh/AIS/logger"
 )
 
 // A forwarder.Conn mock
