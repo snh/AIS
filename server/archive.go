@@ -62,6 +62,16 @@ func (a *Archive) Save(msg chan *nmeais.Message) {
 			}
 			err = a.updatePos(ps)
 			a.db.UpdateDynamic(ps.MMSI, storage.ShipPos{time.Now(), geo.Point{ps.Lat, ps.Lon}, storage.Accuracy(ps.Accuracy), storage.ShipNavStatus(15), ps.Heading, ps.Course, ps.Speed, float32(math.NaN())})
+		case 24: // static data report
+			sdr, e := ais.DecodeStaticDataReport(m.ArmoredPayload())
+			if e != nil && sdr.MMSI <= 0 {
+				continue
+			}
+			length := uint16(sdr.ToBow + sdr.ToStern)
+			lOffset := int16(length/2 - sdr.ToBow)
+			width := uint16(sdr.ToPort + sdr.ToStarboard)
+			wOffset := int16(width/2 - uint16(sdr.ToStarboard))
+			a.db.UpdateStatic(sdr.MMSI, storage.ShipInfo{storage.ShipType(sdr.ShipType), nil, length, width, lOffset, wOffset, sdr.Callsign, sdr.VesselName, nil, nil})
 		}
 		if err != nil {
 			continue //TODO do something...
