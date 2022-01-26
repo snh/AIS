@@ -5,6 +5,7 @@ import (
 	"math"
 	"sync"
 	"time"
+	"fmt"
 
 	ais "github.com/andmarios/aislib"
 	"github.com/snh/AIS/geo"
@@ -64,7 +65,7 @@ func (a *Archive) Save(msg chan *nmeais.Message) {
 			a.db.UpdateDynamic(ps.MMSI, storage.ShipPos{time.Now(), geo.Point{ps.Lat, ps.Lon}, storage.Accuracy(ps.Accuracy), storage.ShipNavStatus(15), ps.Heading, ps.Course, ps.Speed, float32(math.NaN())})
 		case 24: // static data report
 			sdr, e := ais.DecodeStaticDataReport(m.ArmoredPayload())
-			Log.Debug(sdr.MMSI)
+			fmt.Println(sdr.MMSI)
 			if e != nil && sdr.MMSI <= 0 {
 				continue
 			}
