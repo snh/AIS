@@ -1,4 +1,4 @@
-module github.com/tormol/AIS
+module github.com/snh/AIS
 
 go 1.17
 
