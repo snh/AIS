@@ -165,7 +165,7 @@ type ShipInfo struct {
 	Callsign     string    `json:"callSign,omitempty"`
 	ShipName     string    `json:"name,omitempty"`
 	Dest         string    `json:"destination,omitempty"`
-	ETA          *time.Time `json:"eta,omitempty"`
+	ETA          time.Time `json:"eta,omitempty"`
 }
 
 // UnknownInfo contains the default values used when there is no information
@@ -178,6 +178,8 @@ var UnknownInfo = ShipInfo{
 	LengthOffset: 0,
 	WidthOffset:  0,
 	VesselType:   ShipType(0),
+	Dest:					"",
+	ETA:					time.Date(0000, 0, 0, 0, 0, 0, 0, time.UTC),
 }
 
 // ship contains all the information about a specific mmsi.
