@@ -165,7 +165,7 @@ type ShipInfo struct {
 	Callsign     string    `json:"callSign,omitempty"`
 	ShipName     string    `json:"name,omitempty"`
 	Dest         string    `json:"destination,omitempty"`
-	ETA          time.Time `json:"eta,omitempty"`
+	ETA          *time.Time `json:"eta,omitempty"`
 }
 
 // UnknownInfo contains the default values used when there is no information
