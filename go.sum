@@ -2,3 +2,5 @@ github.com/andmarios/aislib v0.0.0-20190131232958-3a9a58899c39 h1:DKt7Sm4WePQkPu
 github.com/andmarios/aislib v0.0.0-20190131232958-3a9a58899c39/go.mod h1:mRizI7/yf7fg+S2apPbMV4dNQM+2kPf12aR3XkWRBeU=
 github.com/cenkalti/backoff v2.2.1+incompatible h1:tNowT99t7UNflLxfYYSlKYsBpXdEet03Pg2g16Swow4=
 github.com/cenkalti/backoff v2.2.1+incompatible/go.mod h1:90ReRw6GdpyfrHakVjL/QHaoyV4aDUVVkXQJJJ3NXXM=
+github.com/snh/AIS v0.0.0-20220126020638-778d06c3fd81 h1:fTX9U1ugBJxRoBxzUGKlsIC9YKomE16N+ECxqlxbd1I=
+github.com/snh/AIS v0.0.0-20220126020638-778d06c3fd81/go.mod h1:aoTIRXb7cWjrn+0spbeVz+FteFF29N8FNpW0eeubX3M=
